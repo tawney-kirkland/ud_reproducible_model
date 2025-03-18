@@ -6,7 +6,7 @@ entry_points:
     parameters:
       file_url:
         description: URL of the file to download
-        type: str
+        type: uri
       artifact_name:
         description: Name of the artifact to save the downloaded file
         type: str
@@ -14,10 +14,12 @@ entry_points:
         description: Type of the artifact to save the downloaded file
         type: str
         default: raw_data
-        required: False
       artifact_description:
         description: Description of the artifact to save the downloaded file
         type: str
     
     command: >-
-      python download_data.py --file_url {file_url} --artifact_name {artifact_name} --artifact_type {artifact_type} --artifact_description {artifact_description}
+      python download_data.py --file_url {file_url} \
+                              --artifact_name {artifact_name} \
+                              --artifact_type {artifact_type} \
+                              --artifact_description {artifact_description}
