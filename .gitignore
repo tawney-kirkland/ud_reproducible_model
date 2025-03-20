@@ -3,6 +3,10 @@
 *.pkl
 *.csv
 *.joblib
+*.ipynb_checkpoints/
 model_artifacts/
 datasets/
 wandb/
+mlruns/
+artifacts/
+outputs/
