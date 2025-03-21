@@ -17,7 +17,7 @@ random_forest_pipeline:
     bootstrap: true
     oob_score: false
     n_jobs: null
-    random_state: null
+    random_state: 42
     verbose: 0
     warm_start: false
     class_weight: null
